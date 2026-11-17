@@ -145,6 +145,38 @@ export interface ClinicalTriageResult {
   generated_at: string;
 }
 
+export interface MLFindingPrediction {
+  class_index: number;
+  class_name: string;
+  probability: number;
+  percentage: number;
+  detected: boolean;
+  severity_tier: 'HIGH' | 'MEDIUM';
+}
+
+export interface MLPredictionResult {
+  status: string;
+  priority: string;
+  priority_color: string;
+  priority_reason: string;
+  confidence_score: number;
+  predictions: MLFindingPrediction[];
+  top_finding: MLFindingPrediction | null;
+  gradcam: {
+    target_class: string;
+    heatmap_base64: string | null;
+    overlay_base64: string | null;
+    disclaimer: string;
+  } | null;
+  model_info: {
+    architecture: string;
+    dataset: string;
+    validation_test_auc: number;
+    classes_evaluated: number;
+    explainability: string;
+  };
+}
+
 // ─── Workflow Steps ─────────────────────────────────────────────────────────────
 
 export type WorkflowStepId = 

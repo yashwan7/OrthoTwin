@@ -1,3 +1,5 @@
+import os
+os.environ.setdefault("MPLCONFIGDIR", "/tmp/matplotlib")
 import torch
 import torch.nn.functional as F
 import numpy as np

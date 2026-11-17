@@ -11,6 +11,7 @@ import {
   WorkflowStepId,
   SurgicalReport,
   ClinicalTriageResult,
+  MLPredictionResult,
 } from '../types';
 import {
   DEFAULT_PATIENT,
@@ -64,6 +65,8 @@ interface OrthoTwinContextType {
   planVsReality: PlanVsRealityComparison;
 
   triage: ClinicalTriageResult;
+  mlResult: MLPredictionResult | null;
+  setMlResult: (res: MLPredictionResult | null) => void;
   
   loadDemoPatient: () => void;
   generateReportData: () => SurgicalReport;
@@ -92,6 +95,7 @@ export const OrthoTwinProvider: React.FC<{ children: React.ReactNode }> = ({ chi
 
   const [planVsReality] = useState<PlanVsRealityComparison>(DEFAULT_PLAN_VS_REALITY);
   const [triage] = useState<ClinicalTriageResult>(DEFAULT_TRIAGE);
+  const [mlResult, setMlResult] = useState<MLPredictionResult | null>(null);
 
   const toggleStructureVisibility = (name: string) => {
     setStructures(prev =>
@@ -200,6 +204,8 @@ export const OrthoTwinProvider: React.FC<{ children: React.ReactNode }> = ({ chi
       setSimAngleRotation,
       planVsReality,
       triage,
+      mlResult,
+      setMlResult,
       loadDemoPatient,
       generateReportData
     }}>

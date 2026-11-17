@@ -28,10 +28,9 @@ const isImageType = (file: File) =>
   /\.(png|jpg|jpeg|tiff?|bmp)$/i.test(file.name);
 
 export const CTUploadView: React.FC = () => {
-  const { setActiveStep, loadDemoPatient, ctUploaded, setCtUploaded } = useOrthoTwin();
+  const { setActiveStep, loadDemoPatient, ctUploaded, setCtUploaded, mlResult, setMlResult } = useOrthoTwin();
   const [isProcessing, setIsProcessing] = useState(false);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [mlResult, setMlResult] = useState<any | null>(null);
   const [activeCamTab, setActiveCamTab] = useState<'overlay' | 'heatmap' | 'original'>('overlay');
   const [dragActive, setDragActive]     = useState(false);
   const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
