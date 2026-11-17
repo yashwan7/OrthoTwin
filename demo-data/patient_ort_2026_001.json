@@ -1,0 +1,107 @@
+{
+  "patient": {
+    "patient_id": "ORT-2026-001",
+    "name": "John Doe (De-identified)",
+    "age": 52,
+    "sex": "Male",
+    "scan_date": "2026-05-10",
+    "modality": "CT",
+    "procedure": "Reverse Shoulder Arthroplasty",
+    "hospital": "Metro Orthopedic Center"
+  },
+  "measurements": {
+    "glenoid_inclination": 12.4,
+    "glenoid_version": -4.2,
+    "humeral_head_diameter": 46.8,
+    "humeral_offset": 28.5,
+    "center_of_rotation": [-12.4, 104.2, 5.8],
+    "glenoid_vault_depth": 24.2,
+    "scapular_spine_angle": 14.8
+  },
+  "landmarks": [
+    {"id": "lm_glenoid_center", "name": "Glenoid Center", "coordinates": [-12.4, 104.2, 5.8], "confidence": 0.965, "description": "Geometric centroid of the glenoid articular surface."},
+    {"id": "lm_glenoid_sup_rim", "name": "Glenoid Superior Rim", "coordinates": [-11.8, 120.1, 7.2], "confidence": 0.942, "description": "Superior margin of glenoid vault rim."},
+    {"id": "lm_glenoid_inf_rim", "name": "Glenoid Inferior Rim", "coordinates": [-13.0, 88.5, 4.4], "confidence": 0.958, "description": "Inferior landmark for baseplate seating."},
+    {"id": "lm_scapular_axis", "name": "Scapular Spine Axis", "coordinates": [45.2, 110.0, -18.4], "confidence": 0.931, "description": "Reference axis along scapular spine plane."},
+    {"id": "lm_humeral_center", "name": "Humeral Head Center", "coordinates": [22.8, 106.5, 6.1], "confidence": 0.978, "description": "Center of best-fit sphere for proximal humeral head."},
+    {"id": "lm_humeral_axis", "name": "Humeral Shaft Axis", "coordinates": [25.1, 42.0, 2.0], "confidence": 0.950, "description": "Longitudinal intramedullary axis of humerus."}
+  ],
+  "implant": {
+    "id": "imp_rev_sys_01",
+    "name": "OrthoTwin Universal Reverse Shoulder System",
+    "type": "Reverse Shoulder",
+    "category": "Reverse Arthroplasty",
+    "manufacturer_neutral_id": "VN-RSA-2026-REV",
+    "description": "Modular reverse shoulder prosthesis with 135°/145° inclination baseplate options.",
+    "dimensions": {
+      "glenosphere_diameter_mm": [36, 39, 42],
+      "baseplate_diameter_mm": 25,
+      "humeral_stem_sizes": [1, 2, 3, 4],
+      "lateralization_mm": [0, 3, 6]
+    },
+    "material": "Ti-6Al-4V + Porous CoCr + UHMWPE",
+    "glenosphere_options": [36, 39, 42],
+    "stem_sizes": [1, 2, 3, 4]
+  },
+  "planned_pose": {
+    "implant_id": "imp_rev_sys_01",
+    "translation_x": 0.0,
+    "translation_y": 0.0,
+    "translation_z": 0.0,
+    "rotation_x": 0.0,
+    "rotation_y": 0.0,
+    "rotation_z": 0.0,
+    "inclination_deg": 145.0,
+    "version_deg": -4.0,
+    "offset_mm": 28.5,
+    "glenosphere_size_mm": 39,
+    "stem_size": 2
+  },
+  "simulation": {
+    "max_abduction": 132.5,
+    "max_flexion": 135.0,
+    "max_external_rotation": 65.0,
+    "max_internal_rotation": 45.0,
+    "scapular_notch_clearance_mm": 3.4,
+    "impingement_status": "Low Risk",
+    "impingement_angle_deg": null,
+    "joint_stability_score": 92.5,
+    "deltoid_lever_arm_increase_pct": 14.2,
+    "contact_stress_peak_mpa": 4.5
+  },
+  "plan_vs_reality": {
+    "planned_pose": {
+      "implant_id": "imp_rev_sys_01",
+      "translation_x": 0.0,
+      "translation_y": 0.0,
+      "translation_z": 0.0,
+      "rotation_x": 0.0,
+      "rotation_y": 0.0,
+      "rotation_z": 0.0,
+      "inclination_deg": 145.0,
+      "version_deg": -4.0,
+      "offset_mm": 28.5,
+      "glenosphere_size_mm": 39,
+      "stem_size": 2
+    },
+    "actual_pose": {
+      "implant_id": "imp_rev_sys_01",
+      "translation_x": -0.4,
+      "translation_y": 0.6,
+      "translation_z": 0.2,
+      "rotation_x": 1.8,
+      "rotation_y": -0.9,
+      "rotation_z": 0.3,
+      "inclination_deg": 146.8,
+      "version_deg": -4.9,
+      "offset_mm": 28.1,
+      "glenosphere_size_mm": 39,
+      "stem_size": 2
+    },
+    "inclination_dev_deg": 1.8,
+    "version_dev_deg": -0.9,
+    "translation_dev_mm": 0.75,
+    "overall_alignment_score": 95.8,
+    "status": "High Fidelity Agreement"
+  }
+}

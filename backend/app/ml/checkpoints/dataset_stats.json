@@ -1,0 +1,142 @@
+{
+  "dataset_name": "NIH ChestX-ray14 (ChestMNIST standardized)",
+  "num_classes": 14,
+  "classes": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Effusion",
+    "Infiltration",
+    "Mass",
+    "Nodule",
+    "Pneumonia",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Pleural Thickening",
+    "Hernia"
+  ],
+  "sample_counts": {
+    "train": 78468,
+    "val": 11219,
+    "test": 22433,
+    "total": 112120
+  },
+  "class_statistics": [
+    {
+      "index": 0,
+      "name": "Atelectasis",
+      "positive_train_samples": 7996,
+      "prevalence_pct": 10.19,
+      "bce_pos_weight": 8.81
+    },
+    {
+      "index": 1,
+      "name": "Cardiomegaly",
+      "positive_train_samples": 1950,
+      "prevalence_pct": 2.49,
+      "bce_pos_weight": 39.24
+    },
+    {
+      "index": 2,
+      "name": "Effusion",
+      "positive_train_samples": 9261,
+      "prevalence_pct": 11.8,
+      "bce_pos_weight": 7.47
+    },
+    {
+      "index": 3,
+      "name": "Infiltration",
+      "positive_train_samples": 13914,
+      "prevalence_pct": 17.73,
+      "bce_pos_weight": 4.64
+    },
+    {
+      "index": 4,
+      "name": "Mass",
+      "positive_train_samples": 3988,
+      "prevalence_pct": 5.08,
+      "bce_pos_weight": 18.68
+    },
+    {
+      "index": 5,
+      "name": "Nodule",
+      "positive_train_samples": 4375,
+      "prevalence_pct": 5.58,
+      "bce_pos_weight": 16.94
+    },
+    {
+      "index": 6,
+      "name": "Pneumonia",
+      "positive_train_samples": 978,
+      "prevalence_pct": 1.25,
+      "bce_pos_weight": 79.23
+    },
+    {
+      "index": 7,
+      "name": "Pneumothorax",
+      "positive_train_samples": 3705,
+      "prevalence_pct": 4.72,
+      "bce_pos_weight": 20.18
+    },
+    {
+      "index": 8,
+      "name": "Consolidation",
+      "positive_train_samples": 3263,
+      "prevalence_pct": 4.16,
+      "bce_pos_weight": 23.05
+    },
+    {
+      "index": 9,
+      "name": "Edema",
+      "positive_train_samples": 1690,
+      "prevalence_pct": 2.15,
+      "bce_pos_weight": 45.43
+    },
+    {
+      "index": 10,
+      "name": "Emphysema",
+      "positive_train_samples": 1799,
+      "prevalence_pct": 2.29,
+      "bce_pos_weight": 42.62
+    },
+    {
+      "index": 11,
+      "name": "Fibrosis",
+      "positive_train_samples": 1158,
+      "prevalence_pct": 1.48,
+      "bce_pos_weight": 66.76
+    },
+    {
+      "index": 12,
+      "name": "Pleural Thickening",
+      "positive_train_samples": 2279,
+      "prevalence_pct": 2.9,
+      "bce_pos_weight": 33.43
+    },
+    {
+      "index": 13,
+      "name": "Hernia",
+      "positive_train_samples": 144,
+      "prevalence_pct": 0.18,
+      "bce_pos_weight": 543.92
+    }
+  ],
+  "pos_weights": [
+    8.813406703351676,
+    39.24,
+    7.472951085195983,
+    4.639499784389823,
+    18.67602808425276,
+    16.935542857142856,
+    79.23312883435582,
+    20.178947368421053,
+    23.04780876494024,
+    45.43076923076923,
+    42.61756531406337,
+    66.76165803108809,
+    33.43089074155331,
+    543.9166666666666
+  ]
+}

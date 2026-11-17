@@ -1,0 +1,133 @@
+{
+  "test_samples": 22433,
+  "test_loss": 0.4561,
+  "mean_roc_auc": 0.7576,
+  "per_class_metrics": [
+    {
+      "class": "Atelectasis",
+      "roc_auc": 0.7532,
+      "accuracy": 0.635,
+      "sensitivity": 0.7632,
+      "specificity": 0.6195,
+      "precision": 0.1952,
+      "f1_score": 0.3109
+    },
+    {
+      "class": "Cardiomegaly",
+      "roc_auc": 0.8606,
+      "accuracy": 0.8201,
+      "sensitivity": 0.7079,
+      "specificity": 0.8231,
+      "precision": 0.0963,
+      "f1_score": 0.1695
+    },
+    {
+      "class": "Effusion",
+      "roc_auc": 0.8221,
+      "accuracy": 0.683,
+      "sensitivity": 0.8319,
+      "specificity": 0.6622,
+      "precision": 0.2563,
+      "f1_score": 0.3919
+    },
+    {
+      "class": "Infiltration",
+      "roc_auc": 0.6639,
+      "accuracy": 0.6631,
+      "sensitivity": 0.5559,
+      "specificity": 0.6859,
+      "precision": 0.2737,
+      "f1_score": 0.3668
+    },
+    {
+      "class": "Mass",
+      "roc_auc": 0.7163,
+      "accuracy": 0.6504,
+      "sensitivity": 0.6681,
+      "specificity": 0.6494,
+      "precision": 0.092,
+      "f1_score": 0.1618
+    },
+    {
+      "class": "Nodule",
+      "roc_auc": 0.6353,
+      "accuracy": 0.5787,
+      "sensitivity": 0.618,
+      "specificity": 0.5763,
+      "precision": 0.0845,
+      "f1_score": 0.1486
+    },
+    {
+      "class": "Pneumonia",
+      "roc_auc": 0.6889,
+      "accuracy": 0.9865,
+      "sensitivity": 0.0207,
+      "specificity": 0.9971,
+      "precision": 0.0714,
+      "f1_score": 0.0321
+    },
+    {
+      "class": "Pneumothorax",
+      "roc_auc": 0.7938,
+      "accuracy": 0.6948,
+      "sensitivity": 0.7603,
+      "specificity": 0.6915,
+      "precision": 0.1117,
+      "f1_score": 0.1948
+    },
+    {
+      "class": "Consolidation",
+      "roc_auc": 0.7767,
+      "accuracy": 0.6923,
+      "sensitivity": 0.7492,
+      "specificity": 0.6897,
+      "precision": 0.0972,
+      "f1_score": 0.172
+    },
+    {
+      "class": "Edema",
+      "roc_auc": 0.8656,
+      "accuracy": 0.8693,
+      "sensitivity": 0.6489,
+      "specificity": 0.8735,
+      "precision": 0.0878,
+      "f1_score": 0.1546
+    },
+    {
+      "class": "Emphysema",
+      "roc_auc": 0.7729,
+      "accuracy": 0.8564,
+      "sensitivity": 0.4754,
+      "specificity": 0.8652,
+      "precision": 0.0757,
+      "f1_score": 0.1306
+    },
+    {
+      "class": "Fibrosis",
+      "roc_auc": 0.7347,
+      "accuracy": 0.9377,
+      "sensitivity": 0.2044,
+      "specificity": 0.9497,
+      "precision": 0.0625,
+      "f1_score": 0.0957
+    },
+    {
+      "class": "Pleural Thickening",
+      "roc_auc": 0.7127,
+      "accuracy": 0.7926,
+      "sensitivity": 0.4646,
+      "specificity": 0.8037,
+      "precision": 0.0741,
+      "f1_score": 0.1278
+    },
+    {
+      "class": "Hernia",
+      "roc_auc": 0.8096,
+      "accuracy": 0.9981,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "precision": 0.0,
+      "f1_score": 0.0
+    }
+  ]
+}

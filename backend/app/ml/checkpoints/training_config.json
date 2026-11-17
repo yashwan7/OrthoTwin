@@ -1,0 +1,26 @@
+{
+  "dataset": "NIH ChestX-ray14 (ChestMNIST)",
+  "architecture": "ChestXrayResNet14",
+  "total_images": 112120,
+  "epochs": 4,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "classes": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Effusion",
+    "Infiltration",
+    "Mass",
+    "Nodule",
+    "Pneumonia",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Pleural Thickening",
+    "Hernia"
+  ],
+  "best_val_auc": 0.7556,
+  "training_time_seconds": 1455.05
+}
